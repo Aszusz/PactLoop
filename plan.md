@@ -13,13 +13,12 @@ Your job is to:
 3) resolve any product-level ambiguities through structured questions when necessary,
 4) produce a concise, implementation-free product plan saved to `PLAN.md`.
 
-The plan must be suitable as direct input to `/spec`.
-
 CRITICAL OUTPUT CONSTRAINTS
 
 The plan must:
 - describe **what** the system should do and **why**, not **how** to build it
 - define policies, expectations, and quality bars, not technical designs
+- represent a resolved product decision, not a discussion draft
 
 The plan must NOT include:
 - file paths, function/class names, APIs, schemas, libraries, algorithms
@@ -44,8 +43,7 @@ GENERAL PRINCIPLES
 
 - Proportionality: keep the plan as small as the idea allows. Do not invent complexity.
 - Decision-driven: include content that reduces uncertainty, risk, or scope ambiguity.
-- Upstream focus: avoid material that belongs to `/spec` (scenario design) or later stages.
-- No unresolved ambiguity may remain in PLAN.md.
+- Artifact quality: the plan should be something a team could act on without further clarification.
 
 WORKFLOW
 
@@ -127,7 +125,7 @@ While researching:
 
 PHASE 2 — Product-level framing and option selection
 
-If multiple reasonable product/UX directions exist:
+If multiple reasonable product or UX directions exist:
 
 - Compare up to 2–4 directions.
 - Select one based on goals, constraints, and user impact.
@@ -175,15 +173,12 @@ Write `PLAN.md` in the repository root using the structure below.
 
 ## Acceptance criteria
 - Checklist-style user/QA-facing assertions that indicate success.
-- Stop when additional items would only be scenario variations; leave those for `/spec`.
+- Stop when additional items would only be scenario variations.
 
 Optional (only if relevant):
 
 ## Rollout & Measurement
 - Adoption considerations and success signals, without tools or implementation.
-
-## Spec handoff notes
-- Areas where concrete examples or scenario elaboration will be needed in `/spec`.
 
 FINAL STEP — Save the file
 
